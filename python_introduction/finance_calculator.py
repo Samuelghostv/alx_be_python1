@@ -1,11 +1,15 @@
-current_age = int(input("How old are you?"))
+monthly_income = float(input("Enter your monthly income: "))
 
-current_year = 2023
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 
-future_year = 2050
+monthly_savings = monthly_income - monthly_expenses
 
-years_until_future = future_year - current_year
+annual_interest_rate = 0.05
 
-age_in_future = current_age + years_until_future
+annual_savings = monthly_savings * 12
+projected_savings_with_interest = annual_savings + (annual_savings * annual_interest_rate)
 
-print(f" In {future_year}, you will be {age_in_future} years old.")
+print(f"Your monthly savings are ${monthly_savings}.")
+print(f"Projected savings after one year, with interest, is: ${projected_savings_with_interest}.")
+
+
