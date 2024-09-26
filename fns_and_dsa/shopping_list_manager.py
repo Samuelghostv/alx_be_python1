@@ -1,4 +1,4 @@
-
+# Function to display the menu
 def display_menu():
     print("\nShopping List Manager")
     print("1. Add Item")
@@ -6,7 +6,7 @@ def display_menu():
     print("3. View List")
     print("4. Exit")
 
-
+# Main function to manage the shopping list
 def main():
     shopping_list = []  
 
@@ -26,7 +26,7 @@ def main():
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"'{item}' has been removed from the shopping list.")
-
+                
             else:
                 print(f"'{item}' is not in the shopping list.")
 
