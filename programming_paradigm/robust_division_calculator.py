@@ -1,6 +1,6 @@
 
 def safe_divide(numerator, denominator):
-   
+  
     try:
         num = float(numerator)
         denom = float(denominator)
@@ -13,3 +13,4 @@ def safe_divide(numerator, denominator):
 
     except ValueError:
         return "Error: Please enter numeric values only."
+
